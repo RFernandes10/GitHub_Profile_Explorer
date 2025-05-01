@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Explorer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="username"
+          placeholder="Digite o nome de usuário GitHub"
+        />
+        <button onclick="searchUser()">Buscar</button>
+      </div>
+
+      <div class="profile" id="profile">
+
+        <div class="profile-header">
+          <img class="avatar" id="avatar" src alt="Avatar" />
+          <div class="user-info">
+            <h2 id="name"></h2>
+            <p id="bio"></p>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>Seguidores</h3>
+            <p id="followers"></p>
+          </div>
+          <div class="stat">
+            <h3>Seguindo</h3>
+            <p id="following"></p>
+          </div>
+          <div class="stat">
+            <h3>Repositórios</h3>
+            <p id="repos-count"></p>
+          </div>
+        </div>
+
+        <div class="repos">
+          <h3>Repositórios</h3>
+          <div class="repo-grid" id="repos"></div>
+          <div class="load-more">
+            <button onclick="loadMoreRepos()" id="loadMore" class="hidden">
+              Ver Mais
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
