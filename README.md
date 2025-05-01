@@ -1,3 +1,5 @@
+![gif da tela projeto](#)
+
 # 🔍 GitHub Profile Viewer
 
 Um visualizador moderno de perfis do GitHub que exibe informações completas de qualquer usuário, incluindo avatar, bio, seguidores, repositórios e muito mais — com uma interface escura elegante e responsiva.
